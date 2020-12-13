@@ -41,4 +41,5 @@ public class DatasourceDemoApplication implements CommandLineRunner {
     private void showData() {
         jdbcTemplate.queryForList("SELECT * FROM FOO").forEach(row -> log.info(row.toString()));
     }
+
 }

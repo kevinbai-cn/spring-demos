@@ -19,6 +19,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 public class DatasourceDemo {
+
     @Autowired
     private DataSource dataSource;
 
@@ -56,4 +57,5 @@ public class DatasourceDemo {
     private static void showAppBeans(ApplicationContext applicationContext) {
         System.out.println(Arrays.toString(applicationContext.getBeanDefinitionNames()));
     }
+
 }
