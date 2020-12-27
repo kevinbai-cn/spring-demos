@@ -27,6 +27,9 @@ public class SimpleJdbcDemoApplication implements CommandLineRunner {
         fooDao.listWithQuery();
         fooDao.listWithQueryForObject();
         fooDao.listWithQueryForList();
+
+        fooDao.batchInsert();
+        fooDao.batchInsertWithNamedParameterJdbcTemplate();
     }
 
 }
